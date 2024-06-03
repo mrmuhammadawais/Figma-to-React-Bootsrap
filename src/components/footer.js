@@ -1,59 +1,44 @@
 import React from "react";
-import {Col,Row} from 'react-bootstrap'
+import {Col,Row,Container} from 'react-bootstrap'
 
- import copyright from '../assets/img/copyright.png'
+
   export const Footer=()=>{
      return(
-        
- 
-  <Col>
-
-
-
-    <footer className="footer">
-    <div className="footer-content">
-      <div className="footer-item">
-        <h3>Favoriete Acties is deel van:</h3>
-        <h4>PubliSquare BV</h4>
-        <p2>Weena 788 <br/>
-3014 DA, Rotterdam  <br/>
-Nederland <br/>
-dpo@favortieteacties.nl</p2>
+      <footer className="footer">
+      <div className="footer-top text-white">
+        <Container className="py">
+          <Row>
+            <Col md={4} className="text-center text-md-left">
+              <h7>Favoriete Acties is deel van:</h7>
+              <div className="text">PubliSquare BV 
+                    Weena 788 
+                    3014 DA, Rotterdam  
+                    Nederland
+                    dpo@favortieteacties.n</div>
+            </Col>
+           
+            <Col md={8} className="text-center text-md-right">
+            
+              <ul className="list-unstyled">
+                <li><a href="/" className="text-white">Home</a></li>
+                <li><a href="/" className="text-white">Contact</a></li>
+                <li><a href="/" className="text-white">Privacy Policy</a></li>
+            
+              </ul>
+            </Col>
+          </Row>
+        </Container>
       </div>
-      <div className="footer-item">
-       
-       
+      <div className="footer-bottom text-white">
+        <Container className="py-2">
+          <Row>
+            <Col className="text-left">
+              <p className="small mb-0">©Favoriete Acties - 2024.</p>
+            </Col>
+          </Row>
+        </Container>
       </div>
-      <div className="footer-item">
-       
-         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/">Contact </a></li>
-          <li><a href="/">Privacy Policy</a></li>
-        </ul> 
-      </div>
-    </div>
-  </footer>
-
-    <footer className="footersecond">
-    <div className="footer-contentscore">
-      <div className="footer-itemtwo">
-        
-        <p2>Favoriete Acties - 2024</p2>
-        <img className="copyright" src={copyright} alt="copyright"></img>
-      </div>
-      
-      </div>
-  </footer>
-      </Col> 
-        
-
- 
-        
-
-   
- 
-
-    )}
-
-
+    </footer>
+  );
+};
+    

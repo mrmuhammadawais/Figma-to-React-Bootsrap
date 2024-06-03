@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from "react";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -9,35 +9,19 @@ import logo1 from '../assets/img/logo1.png'
 
 export const NavBar = () => {
   return (
-   
-     <>
+    <>
     <Navbar bg="primary" data-bs-theme="dark;">
-      <Container>
+      <Container sm={6}>
      
-         {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand>  */}
+        
          <Nav className="me-auto">
           <Nav.Item className="text">Uw acties, onze expertise - Succes in elke e-mai</Nav.Item> 
          
-           {/* <Nav.Link href="#features">Features</Nav.Link> 
-           <Nav.Link href="#pricing">Pricing</Nav.Link>  */}
        
          </Nav>
-      <NavDropdown title="NL" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/Banner">Header</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Banner</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Footer
-              </NavDropdown.Item>
-            </NavDropdown>
-           
-      
-     
-          
-     
+      <NavDropdown  title="NL">
+             
+          </NavDropdown>
        </Container>
     </Navbar>
 
@@ -55,6 +39,7 @@ export const NavBar = () => {
       </Navbar>
 
 </>
+   
     
   );
 }

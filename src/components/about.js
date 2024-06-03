@@ -1,5 +1,9 @@
-import { Container, Col } from "react-bootstrap";
+import { Container,  Col } from "react-bootstrap";
+
+
 import bgImage from "../assets/img/aboutBg.png";
+import aboutBgImage from "../assets/img/aboutBgImage.png";
+
 import Logo from "../assets/img/Logo.png";
 export const About = () => {
   return (
@@ -9,6 +13,11 @@ export const About = () => {
           src={bgImage}
           alt="backgroundimage"
           className="about-background-image"
+        />
+        <img
+          src={aboutBgImage}
+          alt="backgroundimage"
+          className="about-background-image-small"
         />
         <div className="about-section-container">
           <Col>
